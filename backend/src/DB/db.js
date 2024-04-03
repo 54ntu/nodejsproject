@@ -3,7 +3,7 @@ const DB_NAME= require('constants')
 
 const connectDB = async ()=>{   // if i use 'export' in this line of code an error will occur because of the moduleJS syntax 
     try {
-        await mongoose.connect(`${process.env.MONGODB_URI}/${DB_NAME}`);
+        await mongoose.connect(`${process.env.MONGODB_URI}/testdb`);
         console.log('database connected successfully');
         
     } catch (error) {
